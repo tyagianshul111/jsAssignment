@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>swap</title>
+  </head>
+  <body>
+    <p id="p1">hello!</p>
+    <p id="p2">everyone</p>
+    <button id="btn">swap</button>
+    <script type="text/javascript">
+      document.getElementById('btn').addEventListener("click",function(){
+        p1=document.getElementById('p1');
+        p2=document.getElementById('p2');
+
+        p1Content=p1.innerText;
+        p2Content=p2.innerText;
+
+        p1.innerText=p2Content;
+        p2.innerText=p1Content;
+      })
+    </script>
+  </body>
+
+</html>
